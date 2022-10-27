@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(162, 162, 162);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}   */
