@@ -9,8 +9,8 @@ Scrollbar.init(document.querySelector('#html'), {
         overscroll: {
             enable: true,
             damping: 0.2,
-            effect: 'bounce',
-            maxOverscroll: 30
-        }
-    }
+            effect: 'glow',
+            maxOverscroll: 30,
+        },
+    },
 });
