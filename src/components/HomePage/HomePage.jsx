@@ -1,10 +1,6 @@
-import { NavBar } from '../NavBar/NavBar.jsx';
+// import { NavBar } from '../NavBar/NavBar.jsx';
 import classes from './HomePage.module.css';
 
 export function HomePage() {
-    return (
-        <div className={classes.homepage}>
-            <NavBar />
-        </div>
-    );
+    return <div className={classes.homepage}></div>;
 }

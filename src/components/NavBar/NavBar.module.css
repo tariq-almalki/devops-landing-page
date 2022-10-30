@@ -2,9 +2,14 @@
     /* fixed doesn't work if the parent element contains transform property */
     position: fixed;
     top: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-self: center;
     height: 55px;
     width: 1100px;
     background-color: rgb(0, 0, 0);
+    z-index: 100;
 }
 
 .ul {
