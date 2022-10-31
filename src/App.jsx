@@ -1,14 +1,18 @@
-import { useRef } from "react";
-import { Loading } from "./Loading.jsx";
-
-import "./Loading.css";
+import { HomePage } from "./components/HomePage/HomePage.jsx";
+import { Services } from "./components/Services/Services.jsx";
+import { SmoothScroll } from "./components/SmoothScroll/SmoothScroll.jsx";
+import { NavBar } from "./components/NavBar/NavBar.jsx";
+import { Loading } from "./components/Loading/Loading.jsx";
 
 export function App() {
-  const comp = useRef(null);
   return (
-    <div className='k'>
-      <Loading ref={comp} />
-      {/* <div className='test'></div> */}
-    </div>
+    <>
+      <Loading />
+      <NavBar />
+      <SmoothScroll>
+        <HomePage />
+        <Services />
+      </SmoothScroll>
+    </>
   );
 }

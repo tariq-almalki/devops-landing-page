@@ -1,12 +1,13 @@
 import { gsap } from "gsap";
 import anime from "animejs";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import "./Loading.css";
 
 gsap.registerPlugin(MotionPathPlugin);
 
-export const Loading = (props) => {
-  const comp = props.ref;
+export const Loading = () => {
+  const comp = useRef(null);
 
   useEffect(() => {
     var textWrapper = document.querySelector(".ml6");
@@ -15,16 +16,16 @@ export const Loading = (props) => {
       "<span class='letter'>$&</span>"
     );
 
-    anime.timeline().add({
-      targets: ".ml6 .letter",
-      translateY: [100, 0],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 2000,
-      delay: (el, i) => 1800 + 40 * i,
-    });
-
     const ctx = gsap.context(() => {
+      anime.timeline().add({
+        targets: ".ml6 .letter",
+        translateY: [100, 0],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 1800 + 40 * i,
+      });
+
       gsap.to(".block-1", {
         duration: 1.2,
         delay: 2,
@@ -96,7 +97,7 @@ export const Loading = (props) => {
   }, [comp]);
 
   return (
-    <div className='cont'>
+    <div className='cont' ref={comp}>
       <h1 class='ml6'>DevOps</h1>
       <div className='block-1'>
         <svg

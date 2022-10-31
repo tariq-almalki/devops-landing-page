@@ -1,0 +1,39 @@
+.nav {
+    /* fixed doesn't work if the parent element contains transform property */
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-self: center;
+    height: 55px;
+    width: 1100px;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+}
+
+.ul {
+    display: flex;
+    color: white;
+    height: 45px;
+    width: inherit;
+}
+
+.li {
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+
+.li-logo {
+    flex-grow: 2;
+}
+
+.li-services {
+    flex-grow: 1;
+}
+
+.li-team {
+    flex-grow: 1;
+}
