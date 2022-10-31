@@ -8,11 +8,13 @@ export function App() {
   return (
     <>
       <Loading />
-      <NavBar />
-      <SmoothScroll>
-        <HomePage />
-        <Services />
-      </SmoothScroll>
+      <div className='MainContainer'>
+        <NavBar />
+        <SmoothScroll>
+          <HomePage />
+          <Services />
+        </SmoothScroll>
+      </div>
     </>
   );
 }
