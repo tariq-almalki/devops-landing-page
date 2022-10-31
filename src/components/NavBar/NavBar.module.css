@@ -10,6 +10,7 @@
     width: 1100px;
     background-color: rgb(255, 0, 0);
     z-index: 100;
+    margin-bottom: 500px;
 }
 
 .ul {
@@ -17,6 +18,8 @@
     display: flex;
     height: 45px;
     width: inherit;
+    font-family: 'Bebas Neue', monospace;
+    letter-spacing: 0.5px;
 }
 
 .li {
