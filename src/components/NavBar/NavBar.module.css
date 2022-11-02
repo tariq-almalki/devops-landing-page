@@ -1,21 +1,21 @@
 .nav {
     /* fixed doesn't work if the parent element contains transform property */
     position: fixed;
-    top: 45px;
+    top: 35px;
     left: 0;
     right: 0;
     margin: auto;
     align-self: center;
     height: 55px;
     width: 1100px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     z-index: 100;
     margin-bottom: 500px;
 }
 
 .ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     height: 45px;
     width: inherit;
     font-family: 'Bebas Neue', monospace;
@@ -23,42 +23,71 @@
 }
 
 .li {
+    height: 100%;
+    width: 100%;
     border: 0.25px solid rgb(0, 0, 0);
     color: black;
     padding: 10px;
     background-color: white;
 }
 
-.li-logo {
+.a-li-logo {
     flex-grow: 2;
+    text-decoration: none;
     transition: all 0.2s ease 0s;
     z-index: 3;
 }
 
-.li-logo:hover {
+.a-li-logo:focus {
+    outline: 0;
+}
+
+.a-li-logo:hover {
     transform: translate(5px, -5px);
 }
 
 .li-services {
-    flex-grow: 1;
-    transition: all 0.2s ease 0s;
-    border-left-width: 0px;
-    z-index: 2;
+    border-left-width: 0;
 }
 
 .li-services:hover {
+    border-left: 0.25px solid black;
+}
+
+.a-li-services {
+    flex-grow: 1;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.a-li-services:focus {
+    outline: 0;
+}
+
+.a-li-services:hover {
     transform: translate(5px, -5px);
-    border: 0.25px solid rgb(0, 0, 0);
 }
 
 .li-team {
-    flex-grow: 1;
-    transition: all 0.2s ease 0s;
-    border-left-width: 0px;
-    z-index: 1;
+    border-left-width: 0;
 }
 
 .li-team:hover {
+    border-left: 0.25px solid black;
+}
+
+.a-li-team {
+    flex-grow: 1;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    z-index: 1;
+}
+
+.a-li-team:hover {
     transform: translate(5px, -5px);
-    border: 0.25px solid rgb(0, 0, 0);
+}
+
+.a-li-team:focus {
+    outline: 0;
 }

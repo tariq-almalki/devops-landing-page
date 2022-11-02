@@ -1,4 +1,5 @@
 import classes from './HomePage.module.css';
+import videoImage from '../../images/video-image.jpg';
 
 export function HomePage() {
     return (
@@ -13,12 +14,9 @@ export function HomePage() {
                 </p>
             </section>
             <section className={classes.section2}>
-                <video
-                    src='https://wiki.elm.sa/display/TAKS/Dojo+Digital+Library?preview=/99575719/99575718/Week-1_Session-1_2020-11-08.mp4'
-                    poster='../../images/misc/video-image.jpg'
-                    height={504}
-                    width={860}
-                ></video>
+                <a href='https://www.youtube.com/watch?v=XUwzASyHr4Q'>
+                    <img src={videoImage} height={404} width={718} alt='' />
+                </a>
             </section>
         </main>
     );
