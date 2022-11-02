@@ -32,7 +32,7 @@ export const SmoothScroll = ({ children }) => {
     useEffect(() => {
         requestAnimationFrame(() => smoothScrollingHandler());
     }, []);
-    
+
     const smoothScrollingHandler = () => {
         data.current = window.scrollY;
         data.previous += (data.current - data.previous) * data.ease;
@@ -43,7 +43,6 @@ export const SmoothScroll = ({ children }) => {
         // Recursive call
         requestAnimationFrame(() => smoothScrollingHandler());
     };
-
 
     return (
         <div className='parent'>
