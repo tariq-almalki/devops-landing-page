@@ -1,7 +1,10 @@
 import classes from './HomePage.module.css';
 import videoImage from '../../images/video-image.jpg';
+import { useWindowSize } from '../Hooks/useWindowSize.js';
 
 export function HomePage() {
+    const windowSize = useWindowSize();
+
     return (
         <main className={classes.homepage}>
             <section className={classes.section1}>
@@ -15,7 +18,9 @@ export function HomePage() {
             </section>
             <section className={classes.section2}>
                 <a href='https://www.youtube.com/watch?v=XUwzASyHr4Q'>
-                    <img src={videoImage} height={404} width={718} alt='' />
+                    {/* my screen height 746 width 1526 */}
+                    {/* height 404 width 718 */}
+                    <img src={videoImage} height={windowSize.height * 0.542} width={windowSize.width * 0.4674} alt='' />
                 </a>
             </section>
         </main>
