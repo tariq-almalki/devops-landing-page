@@ -1,5 +1,92 @@
 .services {
     height: 100vh;
-    width: 100vw;
-    
+    width: 99.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 2.5rem 2.5rem 30.5rem;
+    grid-template-areas:
+        'header header header'
+        'p p p'
+        'div div div';
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', monospace;
+}
+
+.h1 {
+    margin: auto;
+    grid-area: header;
+}
+
+.p {
+    margin: auto;
+    grid-area: p;
+}
+
+.div {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    grid-area: div;
+}
+
+.ul {
+    height: inherit;
+    width: inherit;
+    list-style-type: none;
+}
+
+.li1 {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 33.333%;
+    background-color: white;
+    border: 0.25px solid black;
+    z-index: 3;
+    transition: all 0.2s ease 0s;
+}
+
+.li1:hover {
+    transform: translate(5px, -5px);
+    border-left-width: 0.25px solid black;
+}
+
+.li2 {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 33.333%;
+    background-color: white;
+    border: 0.25px solid black;
+    border-left-width: 0;
+    z-index: 2;
+    transition: all 0.2s ease 0s;
+}
+
+.li2:hover {
+    transform: translate(5px, -5px);
+    border-left: 0.25px solid black;
+}
+
+.li3 {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 33.333%;
+    background-color: white;
+    border: 0.25px solid black;
+    border-left-width: 0;
+    transition: all 0.2s ease 0s;
+    z-index: 1;
+}
+
+.li3:hover {
+    transform: translate(5px, -5px);
+    border-left: 0.25px solid black;
 }

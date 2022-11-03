@@ -6,7 +6,7 @@ export function HomePage() {
     const windowSize = useWindowSize();
 
     return (
-        <main className={classes.homepage}>
+        <main className={classes.homepage} id='homepage'>
             <section className={classes.section1}>
                 <h1 className={classes.h1}>
                     Welcome to <span className={classes.span}> DevOps Platform</span>
