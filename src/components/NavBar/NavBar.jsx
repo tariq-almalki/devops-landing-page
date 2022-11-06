@@ -11,7 +11,7 @@ export function NavBar() {
     }
 
     function onScrollTeamHandler() {
-        window.scrollTo(0, document.documentElement.clientHeight * 3);
+        window.scrollTo(0, document.documentElement.clientHeight * 5);
     }
 
     const windowSize = useWindowSize();

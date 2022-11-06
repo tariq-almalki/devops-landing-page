@@ -36,13 +36,16 @@
 }
 
 .ul {
+    display: flex;
     height: inherit;
     width: inherit;
     list-style-type: none;
 }
 
 .li1 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: relative;
     height: 100%;
     width: 33.333%;
@@ -57,8 +60,15 @@
     border-left-width: 0.25px solid black;
 }
 
+.li-img {
+    height: 50%;
+    width: 100%;
+}
+
 .li2 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: relative;
     height: 100%;
     width: 33.333%;
@@ -75,7 +85,9 @@
 }
 
 .li3 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: relative;
     height: 100%;
     width: 33.333%;
@@ -89,4 +101,14 @@
 .li3:hover {
     transform: translate(5px, -5px);
     border-left: 0.25px solid black;
+}
+
+.service-h1 {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+.service-p {
+    padding: 10px;
+    text-align: center;
 }
