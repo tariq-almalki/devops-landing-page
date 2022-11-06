@@ -1,12 +1,9 @@
 import classes from "./Loading.module.css";
-import { useEffect } from "react";
 
 import { useLoadingAnimation } from "../Hooks/useLoadingAnimation";
 
 export const Loading = (props) => {
-  // useEffect(() => {
-  //   useLoadingAnimation();
-  // });
+  useLoadingAnimation();
   return (
     <div className='cc1'>
       <div className={classes["block-1"]}>

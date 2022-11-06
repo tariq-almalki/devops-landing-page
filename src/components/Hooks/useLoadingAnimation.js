@@ -2,7 +2,8 @@ import { gsap } from "gsap";
 import { useEffect } from "react";
 import classes from "../Loading/Loading.module.css"
 
-export const useLoadingAnimation = ()=>{ useEffect(() => {
+export const useLoadingAnimation = ()=>{ 
+  useEffect(() => {
     //initiate timeline
     console.log("asAS");
     const tl = gsap.timeline({
@@ -26,7 +27,7 @@ export const useLoadingAnimation = ()=>{ useEffect(() => {
         {
           duration: 1.6,
           overflowY: "hidden",
-          scrub: true,
+          overflowX:"hidden"
         },
         0
       )

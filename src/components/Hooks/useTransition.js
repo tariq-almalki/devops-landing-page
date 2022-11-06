@@ -1,17 +1,21 @@
-import gsap from "gsap"
-import {ScrollTrigger} from "gsap/ScrollTrigger"
-
+import gsap from "gsap";
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top",
-    pin: true,
-    pinSpacing: false,
+export const useTransition = () => {
+  useEffect(() => {
+    let sections = gsap.utils.toArray(".panel");
+    sections.forEach((panel, i) => {
+      console.log(panel);
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        // scrub: 50,
+        snap: 1 / (sections.length - 1), // snap whole page to the closest section!
+        pinSpacing: false,
+      });
+    });
   });
-});
-
-ScrollTrigger.create({
-  snap: 1 / 4, // snap whole page to the closest section!
-});
+};
