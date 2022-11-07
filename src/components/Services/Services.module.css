@@ -12,7 +12,8 @@
     grid-template-areas:
         'header header header'
         'p p p'
-        'div div div';
+        'div1 div2 div3';
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     font-family: 'Bebas Neue', monospace;
@@ -28,87 +29,84 @@
     grid-area: p;
 }
 
-.div {
+.div1 {
     height: 100%;
-    width: 100%;
     background-color: black;
-    grid-area: div;
+    grid-area: div1;
 }
 
-.ul {
-    display: flex;
-    height: inherit;
-    width: inherit;
-    list-style-type: none;
+.div2 {
+    height: 100%;
+    background-color: black;
+    grid-area: div2;
 }
 
-.li1 {
+.div3 {
+    height: 100%;
+    background-color: black;
+    grid-area: div3;
+}
+
+.a1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-decoration: none;
     position: relative;
     height: 100%;
-    width: 33.333%;
+    width: 100%;
+    margin: 0;
     background-color: white;
     border: 0.25px solid black;
     z-index: 3;
+    cursor: pointer;
     transition: all 0.2s ease 0s;
+    
 }
 
-.li1:hover {
+.a1:hover {
     transform: translate(5px, -5px);
     border-left-width: 0.25px solid black;
 }
 
-.li-img {
-    height: 50%;
-    width: 100%;
-}
-
-.li2 {
+.a2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-decoration: none;
     position: relative;
     height: 100%;
-    width: 33.333%;
+    width: 100%;
     background-color: white;
     border: 0.25px solid black;
     border-left-width: 0;
     z-index: 2;
+    cursor: pointer;
     transition: all 0.2s ease 0s;
 }
 
-.li2:hover {
+.a2:hover {
     transform: translate(5px, -5px);
     border-left: 0.25px solid black;
 }
 
-.li3 {
+.a3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-decoration: none;
     position: relative;
     height: 100%;
-    width: 33.333%;
+    width: 100%;
     background-color: white;
     border: 0.25px solid black;
     border-left-width: 0;
-    transition: all 0.2s ease 0s;
     z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
 }
 
-.li3:hover {
+.a3:hover {
     transform: translate(5px, -5px);
     border-left: 0.25px solid black;
-}
-
-.service-h1 {
-    width: fit-content;
-    margin: 0 auto 0 auto;
-}
-
-.service-p {
-    padding: 10px;
-    text-align: center;
 }
