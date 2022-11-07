@@ -1,16 +1,9 @@
-import { useWindowSize } from '../Hooks/useWindowSize.js';
 import classes from './Services.module.css';
 
 export function Services(props) {
-    const windowSize = useWindowSize();
-    const gridColumn = (windowSize.width * 0.7161) / 3;
-
     return (
         <div className={classes.services} id='services'>
-            <main
-                className={classes.main}
-                style={{ gridTemplateColumns: `${gridColumn}px ${gridColumn}px ${gridColumn}px` }}
-            >
+            <main className={classes.main}>
                 <h1 className={classes.h1}>DevOps Services</h1>
                 <p className={classes.p}>
                     Plan smarter, collaborate better, and ship faster with a set of modern DevOps services

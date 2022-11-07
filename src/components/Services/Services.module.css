@@ -1,6 +1,6 @@
 .services {
     height: 100vh;
-    width: 99.25vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,13 @@
 
 .main {
     display: grid;
+    width: 70%;
     grid-template-rows: 2.5rem 2.5rem 30.5rem;
     grid-template-areas:
         'header header header'
         'p p p'
         'div1 div2 div3';
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33.333% 33.333% 33.333%;
     justify-content: center;
     align-items: center;
     font-family: 'Bebas Neue', monospace;
@@ -48,8 +49,8 @@
 }
 
 .a1 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 15% 35%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;
@@ -61,7 +62,6 @@
     z-index: 3;
     cursor: pointer;
     transition: all 0.2s ease 0s;
-    
 }
 
 .a1:hover {
@@ -70,8 +70,8 @@
 }
 
 .a2 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 15% 35%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;
@@ -91,8 +91,8 @@
 }
 
 .a3 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 50% 15% 35%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;

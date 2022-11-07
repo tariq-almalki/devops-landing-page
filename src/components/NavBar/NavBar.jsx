@@ -1,5 +1,4 @@
 import classes from './NavBar.module.css';
-import { useWindowSize } from '../Hooks/useWindowSize.js';
 
 export function NavBar() {
     function onScrollHomePageHandler() {
@@ -14,10 +13,8 @@ export function NavBar() {
         window.scrollTo(0, document.documentElement.clientHeight * 5);
     }
 
-    const windowSize = useWindowSize();
-
     return (
-        <nav className={classes.nav} id='navbar-id' style={{ width: windowSize.width * 0.7161 }}>
+        <nav className={classes.nav} id='navbar-id'>
             <ul className={classes.ul}>
                 <a className={`${classes['a-li-logo']}`} href='#homepage' onClick={onScrollHomePageHandler}>
                     <li className={`${classes['li-logo']} ${classes['li']}`}>Logo</li>
