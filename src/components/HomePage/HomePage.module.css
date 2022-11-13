@@ -2,9 +2,26 @@
     height: 100vh;
     width: 100vw;
 
-    font-family: 'Bebas Neue', monospace;
+    font-family: 'Saira', monospace;
+
+    background-color: black;
 
     background-image: repeating-linear-gradient(
+            284deg,
+            transparent 0px,
+            transparent 1px,
+            rgb(251, 251, 251) 1px,
+            rgb(251, 251, 251) 3px
+        ),
+        repeating-linear-gradient(
+            14deg,
+            transparent 0px,
+            transparent 1px,
+            rgb(251, 251, 251) 1px,
+            rgb(251, 251, 251) 3px
+        ),
+        linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222));
+    /* background-image: repeating-linear-gradient(
             135deg,
             rgb(0, 0, 0) 0px,
             rgb(0, 0, 0) 10px,
@@ -19,7 +36,7 @@
             hsl(338, 74%, 56%),
             hsl(50, 74%, 56%),
             hsl(122, 74%, 56%)
-        );
+        ); */
 
     display: grid;
     grid-template-rows: 35% 65%;
@@ -33,23 +50,32 @@
 }
 
 .section2 {
-    margin: auto;
-    margin-bottom: 55px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    max-width: 44.86rem;
+    min-width: 44.86rem;
 }
 
 .h1 {
-    color: white;
+    color: black;
     width: fit-content;
     margin: auto;
     font-size: 58px;
 }
 
 .span {
-    color: hsl(266, 74%, 56%);
+    color: #fb2576;
 }
 
 .p {
-    color: white;
-    font-size: 24px;
-    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: 'Lexend', monospace;
 }

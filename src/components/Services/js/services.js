@@ -18,24 +18,39 @@ import openShiftSvg from '../../../images/services-icons/openshift-service.svg';
 const sharedStyles = {
     imgDivStyles: { display: 'flex', placeSelf: 'center' },
     h1DivStyles: { display: 'flex', placeSelf: 'center' },
-    pDivStyles: { display: 'flex', placeSelf: 'center' },
+    pDivStyles: { display: 'flex' },
     imgStyles: { maxHeight: '150px', maxWidth: '150px', height: '100%', width: '100%' },
-    h1Styles: { color: 'black' },
-    pStyles: { color: 'black', textAlign: 'center', padding: '10px' },
+    h1Styles: { color: 'black', fontFamily: 'Saira, monospace', fontSize: '2.2vw' },
+    pStyles: {
+        color: 'black',
+        textAlign: 'center',
+        padding: '10px',
+        paddingTop: '11px',
+        fontFamily: 'Lexend, monosapce',
+        fontSize: '0.8rem',
+        lineHeight: '1.3rem',
+    },
 };
 
 export const services = [
     [
         {
             src: jiraSvg,
-            p: 'Deliver value to your users faster using proven agile tools to plan, track, ans discuss work across your teams.',
+            p: 'Deliver value to your users faster using proven agile tools to plan, track, and discuss work across your teams.',
             h1: 'DevOps Boards',
             imgDivStyles: {},
             h1DivStyles: { display: 'flex', placeSelf: 'center' },
-            pDivStyles: { display: 'flex', placeSelf: 'center' },
+            pDivStyles: { display: 'flex' },
             imgStyles: { minHeight: '100px', minWidth: '100px', height: '100%', width: '100%' },
-            h1Styles: { color: 'black' },
-            pStyles: { color: 'black', textAlign: 'center', padding: '10px' },
+            h1Styles: { color: 'black', fontFamily: 'Saira, monospace', fontSize: '2.2vw' },
+            pStyles: {
+                color: 'black',
+                textAlign: 'center',
+                fontFamily: 'Lexend, monosapce',
+                padding: '10px',
+                paddingTop: '11px',
+                fontSize: '0.8rem',
+            },
         },
         {
             src: wikiSvg,
@@ -68,6 +83,8 @@ export const services = [
             p: 'catalog service which will enable the search and discovery of corporate deployment libraries(helm charts), Kubernetes-ready apps.',
             h1: 'DevOps AppStore',
             ...sharedStyles,
+            imgDivStyles: { maxHeight: '220px', maxWidth: '220px', placeSelf: 'center' },
+            imgStyles: { height: '100%', width: '100%' },
         },
     ],
     [
@@ -79,10 +96,12 @@ export const services = [
         },
         {
             src: nexusIqSvg,
-            p: "Sonatype's policy engine powered by precise intelligence on open source components.it provides a number of tools to improve component usage in your software supply chain, allowing you to automate your processes and achieve accelerated speed to delivery while also increasing product quality.",
+            p: "Sonatype's policy engine provides a number of tools to improve component usage in your software supply chain, allowing you to automate your processes and achieve accelerated speed to delivery while also increasing product quality.",
             // SCA => Software Composition Analysis
             h1: 'DevOps SCA',
             ...sharedStyles,
+            imgDivStyles: { maxHeight: '190px', maxWidth: '190px', placeSelf: 'center' },
+            imgStyles: { height: '100%', width: '100%' },
         },
         {
             src: bambooPng,
@@ -97,18 +116,24 @@ export const services = [
             p: 'Orchestrate the phases of software delivery till reaching end users while providing the ability to inject quality gates in between.',
             h1: 'DevOps Pipelines',
             ...sharedStyles,
+            imgDivStyles: { maxHeight: '190px', maxWidth: '190px', placeSelf: 'center' },
+            imgStyles: { height: '100%', width: '100%' },
         },
         {
             src: argoWorkflowsPng,
             p: 'Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on kubernetes.',
             h1: 'DevOps CD',
             ...sharedStyles,
+            imgDivStyles: { maxHeight: '190px', maxWidth: '190px', placeSelf: 'center' },
+            imgStyles: { height: '100%', width: '100%' },
         },
         {
             src: openShiftSvg,
             p: 'Red Hat OpenShift is enterprise-ready Kubernetes container platform built for an open hybrid cloud strategy. It provides a consistent application platform to manage hybrid cloud, multicloud, and edge deployments.',
             h1: 'DevOps Openshift',
             ...sharedStyles,
+            imgDivStyles: { maxHeight: '190px', maxWidth: '190px', placeSelf: 'center' },
+            imgStyles: { height: '100%', width: '100%' },
         },
     ],
 ];

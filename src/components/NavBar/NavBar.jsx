@@ -17,7 +17,7 @@ export function NavBar() {
         <nav className={classes.nav} id='navbar-id'>
             <ul className={classes.ul}>
                 <a className={`${classes['a-li-logo']}`} href='#homepage' onClick={onScrollHomePageHandler}>
-                    <li className={`${classes['li-logo']} ${classes['li']}`}>Logo</li>
+                    <li className={`${classes['li-logo']} ${classes['li']}`}>Home</li>
                 </a>
                 <a className={`${classes['a-li-services']}`} href='#services' onClick={onScrollServicesHandler}>
                     <li className={`${classes['li-services']} ${classes['li']}`}>Services</li>

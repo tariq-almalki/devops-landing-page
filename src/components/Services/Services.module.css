@@ -4,6 +4,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: repeating-linear-gradient(
+            284deg,
+            transparent 0px,
+            transparent 1px,
+            rgb(251, 251, 251) 1px,
+            rgb(251, 251, 251) 3px
+        ),
+        repeating-linear-gradient(
+            14deg,
+            transparent 0px,
+            transparent 1px,
+            rgb(251, 251, 251) 1px,
+            rgb(251, 251, 251) 3px
+        ),
+        linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222));
 }
 
 .main {
@@ -17,7 +33,7 @@
     grid-template-columns: 33.333% 33.333% 33.333%;
     justify-content: center;
     align-items: center;
-    font-family: 'Bebas Neue', monospace;
+    font-family: 'Saira', monospace;
 }
 
 .h1 {
@@ -28,6 +44,7 @@
 .p {
     margin: auto;
     grid-area: p;
+    font-family: 'Lexend', monospace;
 }
 
 .div1 {
@@ -50,7 +67,7 @@
 
 .a1 {
     display: grid;
-    grid-template-rows: 50% 15% 35%;
+    grid-template-rows: 50% 10% 40%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;
@@ -65,13 +82,13 @@
 }
 
 .a1:hover {
-    transform: translate(5px, -5px);
+    transform: translate(7px, -7px);
     border-left-width: 0.25px solid black;
 }
 
 .a2 {
     display: grid;
-    grid-template-rows: 50% 15% 35%;
+    grid-template-rows: 50% 10% 40%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;
@@ -86,13 +103,13 @@
 }
 
 .a2:hover {
-    transform: translate(5px, -5px);
+    transform: translate(7px, -7px);
     border-left: 0.25px solid black;
 }
 
 .a3 {
     display: grid;
-    grid-template-rows: 50% 15% 35%;
+    grid-template-rows: 50% 10% 40%;
     justify-content: space-between;
     text-decoration: none;
     position: relative;
@@ -107,6 +124,6 @@
 }
 
 .a3:hover {
-    transform: translate(5px, -5px);
+    transform: translate(7px, -7px);
     border-left: 0.25px solid black;
 }
