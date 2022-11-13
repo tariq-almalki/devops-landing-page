@@ -13,6 +13,28 @@ export const useSmoothScroll = (ref) => {
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
     locoScroll.on("scroll", ScrollTrigger.update);
 
+    const anchorLinks = document.querySelectorAll(
+      "a[href^=\\#]:not([href$=\\#])"
+    );
+
+    anchorLinks.forEach((anchorLink) => {
+      let hashval = anchorLink.getAttribute("href");
+      let target = document.querySelector(hashval);
+
+      anchorLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // anchorLinks.forEach((anchorLink) => {
+        //   anchorLink.classList.remove("active");
+        // });
+
+        // e.target.classList.add("active");
+
+        locoScroll.scrollTo(target);
+      });
+    });
+
     // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".parent", {
       scrollTop(value) {

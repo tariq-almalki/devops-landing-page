@@ -1,10 +1,10 @@
 .homepage {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 
     font-family: 'Bebas Neue', monospace;
 
-    background-image: repeating-linear-gradient(
+    /* background-image: repeating-linear-gradient(
             135deg,
             rgb(0, 0, 0) 0px,
             rgb(0, 0, 0) 10px,
@@ -19,7 +19,7 @@
             hsl(338, 74%, 56%),
             hsl(50, 74%, 56%),
             hsl(122, 74%, 56%)
-        );
+        ); */
 
     display: grid;
     grid-template-rows: 35% 65%;
@@ -38,7 +38,7 @@
 }
 
 .h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     width: fit-content;
     margin: auto;
     font-size: 58px;
@@ -49,7 +49,7 @@
 }
 
 .p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     letter-spacing: 1px;
 }

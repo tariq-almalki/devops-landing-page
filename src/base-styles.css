@@ -2,5 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
     /* scroll-behavior: smooth; */
+}
+#wrapper{
+    width: 400%;
+    display: flex;
+    flex-wrap:wrap;
+
 }

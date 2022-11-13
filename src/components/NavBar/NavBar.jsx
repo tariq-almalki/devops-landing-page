@@ -11,7 +11,7 @@ export function NavBar() {
   }
 
   function onScrollTeamHandler() {
-    window.scrollTo(0, document.documentElement.clientHeight * 3);
+    window.scrollTo(0, document.documentElement.clientHeight * 5);
   }
 
   const windowSize = useWindowSize();
@@ -26,14 +26,16 @@ export function NavBar() {
         <a
           className={`${classes["a-li-logo"]}`}
           href='#homepage'
-          onClick={onScrollHomePageHandler}
+          data-scroll-to
+          // onClick={onScrollHomePageHandler}
         >
           <li className={`${classes["li-logo"]} ${classes["li"]}`}>Logo</li>
         </a>
         <a
           className={`${classes["a-li-services"]}`}
           href='#services'
-          onClick={onScrollServicesHandler}
+          data-scroll-to
+          // onClick={onScrollServicesHandler}
         >
           <li className={`${classes["li-services"]} ${classes["li"]}`}>
             Services
@@ -42,7 +44,8 @@ export function NavBar() {
         <a
           className={`${classes["a-li-team"]} `}
           href='#services'
-          onClick={onScrollTeamHandler}
+          data-scroll-to
+          // onClick={onScrollTeamHandler}
         >
           <li className={`${classes["li-team"]} ${classes["li"]}`}>Team</li>
         </a>
