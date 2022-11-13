@@ -17,7 +17,11 @@ export function HomePage() {
         </p>
       </section>
       <section className={classes.section2}>
-        <a href='https://www.youtube.com/watch?v=XUwzASyHr4Q'>
+        <a
+          href='https://www.youtube.com/watch?v=kY0XRCKqRc0&list=PLAP97hPyplzKtqMcwOYm9YS48CpV5SDZs'
+          target='_blank'
+          rel='noreferrer'
+        >
           {/* my screen height 746 width 1526 */}
           {/* height 404 width 718 */}
           <img

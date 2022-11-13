@@ -15,28 +15,39 @@ import pipelinePng from '../../../images/services-icons/pipeline-icon.png';
 import argoWorkflowsPng from '../../../images/services-icons/argo-workflows.png';
 import openShiftSvg from '../../../images/services-icons/openshift-service.svg';
 
+const sharedStyles = {
+    imgDivStyles: { display: 'flex', placeSelf: 'center' },
+    h1DivStyles: { display: 'flex', placeSelf: 'center' },
+    pDivStyles: { display: 'flex', placeSelf: 'center' },
+    imgStyles: { maxHeight: '150px', maxWidth: '150px', height: '100%', width: '100%' },
+    h1Styles: { color: 'black' },
+    pStyles: { color: 'black', textAlign: 'center', padding: '10px' },
+};
+
 export const services = [
     [
         {
             src: jiraSvg,
             p: 'Deliver value to your users faster using proven agile tools to plan, track, ans discuss work across your teams.',
             h1: 'DevOps Boards',
-            imgStyles: {},
-            pStyles: {},
+            imgDivStyles: {},
+            h1DivStyles: { display: 'flex', placeSelf: 'center' },
+            pDivStyles: { display: 'flex', placeSelf: 'center' },
+            imgStyles: { minHeight: '100px', minWidth: '100px', height: '100%', width: '100%' },
+            h1Styles: { color: 'black' },
+            pStyles: { color: 'black', textAlign: 'center', padding: '10px' },
         },
         {
             src: wikiSvg,
             p: 'Get Team/Project Workspace Where Knowledge and Collaboration Meet. serving as the starting point for finding critical information throughout your organization.',
             h1: 'DevOps Wiki',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: bitBucketSvg,
             p: 'Get unlimited, cloud-hosted private Git repositories and collaborate to build better code with pull requests and advanced file management.',
             h1: 'DevOps Repos',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
     ],
     [
@@ -44,22 +55,19 @@ export const services = [
             src: sonarSourceSvg,
             p: 'SonarQube is universal tool for static code analysis that has become more or less the industry standard. Keeping code clean, simple, and easy to read is also a lot easier with SonarQube.',
             h1: 'DevOps Code Scan',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: vaultSvg,
             p: 'Securely Share App secrets through deployment environments with 100% integration with pipelines services.',
             h1: 'DevOps Secrets',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: appStorePng,
             p: 'catalog service which will enable the search and discovery of corporate deployment libraries(helm charts), Kubernetes-ready apps.',
             h1: 'DevOps AppStore',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
     ],
     [
@@ -67,22 +75,20 @@ export const services = [
             src: nexusPng,
             p: 'Single source of Truth for all your apps binaries, and build artifacts. Create, Host, and Share packages with your team, and add artifacts to your CI/CD pipelines with a single click.',
             h1: 'DevOps Artifacts',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: nexusIqSvg,
             p: "Sonatype's policy engine powered by precise intelligence on open source components.it provides a number of tools to improve component usage in your software supply chain, allowing you to automate your processes and achieve accelerated speed to delivery while also increasing product quality.",
-            h1: '',
-            imgStyles: {},
-            pStyles: {},
+            // SCA => Software Composition Analysis
+            h1: 'DevOps SCA',
+            ...sharedStyles,
         },
         {
             src: bambooPng,
             p: 'Build your first continuous integration and continuous delivery pipeline with Bamboo, a CI server that can be used to automate the build, test, and release management for software application, creating a continuous delivery pipeline.',
             h1: 'DevOps CI',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
     ],
     [
@@ -90,22 +96,19 @@ export const services = [
             src: pipelinePng,
             p: 'Orchestrate the phases of software delivery till reaching end users while providing the ability to inject quality gates in between.',
             h1: 'DevOps Pipelines',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: argoWorkflowsPng,
             p: 'Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on kubernetes.',
             h1: 'DevOps CD',
-            imgStyles: {},
-            pStyles: {},
+            ...sharedStyles,
         },
         {
             src: openShiftSvg,
             p: 'Red Hat OpenShift is enterprise-ready Kubernetes container platform built for an open hybrid cloud strategy. It provides a consistent application platform to manage hybrid cloud, multicloud, and edge deployments.',
-            h1: 'DevOps Containers - Openshift',
-            imgStyles: {},
-            pStyles: {},
+            h1: 'DevOps Openshift',
+            ...sharedStyles,
         },
     ],
 ];

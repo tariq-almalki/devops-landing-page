@@ -26,3 +26,4 @@ yarn-error.log*
 /src/js
 /src/images/icons
 /src/images/misc
+git_token.txt
