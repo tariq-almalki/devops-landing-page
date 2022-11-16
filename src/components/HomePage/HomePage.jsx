@@ -1,10 +1,15 @@
 import classes from './HomePage.module.css';
 import videoImage from '../../images/video-image.jpg';
-import fig1 from '../../images/figures/business-3d-young-man-in-formalwear-standing-with-hands-on-hip.png';
-import { useWindowSize } from '../Hooks/useWindowSize.js';
+// import { useWindowSize } from '../Hooks/useWindowSize.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export function HomePage() {
-    const windowSize = useWindowSize();
+    // const windowSize = useWindowSize();
+
+    function onScrollServicesHandler() {
+        window.scrollTo(0, document.documentElement.clientHeight);
+    }
 
     return (
         <main className={classes.homepage} id='homepage'>
@@ -26,21 +31,15 @@ export function HomePage() {
                 >
                     {/* my screen height 746 width 1526 */}
                     {/* height 404 width 718 */}
-                    <img
-                        className={classes.img}
-                        src={videoImage}
-                        height={windowSize.height * 0.542}
-                        width={windowSize.width * 0.4674}
-                        alt=''
-                    />
+                    <img className={classes.img} src={videoImage} height={404} width={718} alt='' />
+                    <div className={classes.getStarted}>Get Started</div>
                 </a>
-                {/* <img
-                    style={{ position: 'absolute', top: '10rem', left: '1rem' }}
-                    src={fig1}
-                    alt=''
-                    height={579.37}
-                    width={206}
-                /> */}
+                <div className={classes.arrowButtonContainer}>
+                    <div className={classes.arrowButton} onClick={onScrollServicesHandler}>
+                        <FontAwesomeIcon icon={faArrowDown} className={classes.faArrowDown} />
+                        {/* <img className={classes.svgArrow} src={arrowDown} alt='' width={24} height={24} /> */}
+                    </div>
+                </div>
             </section>
         </main>
     );

@@ -6,7 +6,8 @@
 
     background-color: black;
 
-    background-image: repeating-linear-gradient(
+    background-image: url(../../images/figures/business-3d-young-man-in-formalwear-standing-with-hands-on-hip.png),
+        repeating-linear-gradient(
             284deg,
             transparent 0px,
             transparent 1px,
@@ -21,6 +22,9 @@
             rgb(251, 251, 251) 3px
         ),
         linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222));
+    background-repeat: no-repeat;
+    background-position: 5% 90%;
+    background-size: 14rem 39rem, auto, auto, auto;
     /* background-image: repeating-linear-gradient(
             135deg,
             rgb(0, 0, 0) 0px,
@@ -46,7 +50,7 @@
 
 .section1 {
     align-self: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: 2.5rem;
 }
 
 .section2 {
@@ -57,6 +61,50 @@
     align-items: center;
 }
 
+.a {
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.arrowButtonContainer {
+    display: flex;
+    height: 10rem;
+}
+
+.arrowButton {
+    display: none;
+    align-self: flex-end;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb2576;
+    padding: 10px;
+    height: 2rem;
+    width: 2rem;
+    transition: all 0.2s ease;
+    border: 0.25px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.arrowButton:hover {
+    background-color: white;
+    color: #fb2576;
+}
+
+.faArrowDown {
+    color: rgb(255, 255, 255);
+}
+
+.arrowButton:hover .faArrowDown {
+    color: #fb2576;
+}
+
+.svgArrow {
+    justify-self: center;
+    vertical-align: middle;
+}
+
 .img {
     max-width: 44.86rem;
     min-width: 44.86rem;
@@ -65,8 +113,26 @@
 .h1 {
     color: black;
     width: fit-content;
+    text-align: center;
     margin: auto;
     font-size: 58px;
+}
+
+.getStarted {
+    display: none;
+    color: white;
+    align-self: flex-start;
+    background-color: #fb2576;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.75rem;
+    transition: all 0.2s ease;
+    border: 0.25px solid black;
+}
+
+.getStarted:hover {
+    color: #fb2576;
+    background-color: white;
 }
 
 .span {
@@ -75,7 +141,109 @@
 
 .p {
     color: rgb(0, 0, 0);
-    font-size: 16px;
-    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
     font-family: 'Lexend', monospace;
+}
+
+@media (max-width: 1024px) {
+    .section2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .a {
+        align-self: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .getStarted {
+        display: block;
+    }
+
+    .arrowButton {
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+    .homepage {
+        grid-template-rows: 25% 55%;
+        background-repeat: no-repeat;
+        background-size: 22rem auto, auto, auto, auto;
+    }
+
+    .h1 {
+        font-size: 3.5rem;
+    }
+
+    .p {
+        font-size: 1.2rem;
+    }
+    .getStarted {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .a {
+        align-self: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .getStarted {
+        display: block;
+    }
+
+    .arrowButton {
+        display: flex;
+    }
+}
+
+@media (max-width: 428px) and (max-height: 926px) {
+    .homepage {
+        grid-template-rows: 25% 75%;
+    }
+}
+
+@media (max-width: 414px) and (max-height: 736px) {
+    .homepage {
+        grid-template-rows: 30% 70%;
+        background-size: 11.5rem auto, auto, auto, auto;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+    .homepage {
+        background-size: 12rem auto, auto, auto, auto;
+        grid-template-rows: 30% 70%;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+    .homepage {
+        background-size: 10rem auto, auto, auto, auto;
+        background-position: 0% 100%;
+        grid-template-rows: 35% 65%;
+    }
 }

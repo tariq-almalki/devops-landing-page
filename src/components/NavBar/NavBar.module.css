@@ -97,3 +97,15 @@
 .a-li-team:focus {
     outline: 0;
 }
+
+@media (max-width: 428px) and (max-height: 926px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+    nav {
+        display: none;
+    }
+}
