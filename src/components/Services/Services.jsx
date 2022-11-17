@@ -11,7 +11,8 @@ export function Services(props) {
             ${classes[`${props.services[4]['res-services-iphone12-13-background-image']}`]}
             ${classes[`${props.services[4]['res-services-ipad-mini-background-image']}`]}
             ${classes[`${props.services[4]['res-services-ipad-pro-background-image']}`]}
-            ${classes[`${props.services[4]['res-services-generic-laptop-background-image']}`]}`}
+            ${classes[`${props.services[4]['res-services-generic-laptop-background-image']}`]}
+            ${classes[`${props.services[4]['res-services-156inch-laptop-background-image']}`]}`}
             style={props.services[3]}
         >
             <main className={classes.main}>

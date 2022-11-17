@@ -8,7 +8,8 @@
 
 .main {
     display: grid;
-    width: 70%;
+    width: 60%;
+    max-width: 1146px;
     grid-template-rows: 2.5rem 2.5rem 30.5rem;
     grid-template-areas:
         'header header header'
@@ -113,7 +114,38 @@
     border-left: 0.25px solid black;
 }
 
+@media (min-width: 1920px) and (min-height: 1080px) {
+}
+
+@media (min-width: 1536px) and (min-height: 864px) {
+    .res-services-lying-black-guy-156inch-laptop {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 95% 0% !important;
+    }
+}
+
 @media (min-width: 1024px) and (min-height: 1366px) {
+    .main {
+        grid-template-rows: 2.5rem 3.5rem 30.5rem;
+    }
+
     .res-services-backpack-black-guy-ipad-pro {
         background-image: url(../../images/figures/3d-business-guy-with-backpack-and-laptop.png),
             repeating-linear-gradient(
@@ -250,6 +282,21 @@
 }
 
 @media (max-width: 768px) and (max-height: 1024px) {
+    .services {
+        height: 150vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 2.5rem 20rem 20rem 20rem;
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
     .res-services-black-guy-ipad-mini {
         background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
             repeating-linear-gradient(
@@ -293,14 +340,13 @@
         background-size: 14rem auto, auto, auto, auto;
         background-position: 0% 0% !important;
     }
-}
 
-@media (max-width: 768px) {
-    .main {
-        grid-template-rows: 3.5rem 3.5rem 32.5rem;
+    .a2 {
+        border-left: 0.25px solid black;
     }
-    div p {
-        line-height: 1rem !important;
+
+    .a3 {
+        border-left: 0.25px solid black;
     }
 }
 
@@ -310,8 +356,7 @@
     }
 
     .main {
-        grid-template-rows: 2.5rem 2.5rem 26rem 26rem 26rem;
-        grid-template-columns: repeat(auto-fit, auto);
+        grid-template-rows: 2.5rem 4rem 26rem 26rem 26rem;
         row-gap: 1rem;
         grid-template-areas:
             'header header header'
@@ -424,7 +469,7 @@
     }
 
     .main {
-        grid-template-rows: 2.5rem 2.5rem 26rem 26rem 26rem;
+        grid-template-rows: 2.5rem 4.5rem 26rem 26rem 26rem;
         grid-template-columns: repeat(auto-fit, auto);
         row-gap: 1rem;
         grid-template-areas:
@@ -534,11 +579,11 @@
 
 @media (max-width: 390px) and (max-height: 844px) {
     .services {
-        height: 240vh;
+        height: 250vh;
     }
 
     .main {
-        grid-template-rows: 2.5rem 2.5rem 26rem 26rem 26rem;
+        grid-template-rows: 2.5rem 4.5rem 28rem 28rem 28rem;
         grid-template-columns: repeat(auto-fit, auto);
         row-gap: 1rem;
         grid-template-areas:
@@ -633,6 +678,14 @@
         background-position: 50% 0% !important;
     }
 
+    main h1 {
+        font-size: 30px;
+    }
+
+    div p {
+        line-height: 1.1rem !important;
+    }
+
     .res-h1 {
         font-size: 1.5rem !important;
     }
@@ -648,12 +701,11 @@
 
 @media (max-width: 375px) and (max-height: 812px) {
     .services {
-        height: 240vh;
+        height: 250vh;
     }
 
     .main {
-        grid-template-rows: 2.5rem 2.5rem 26rem 26rem 26rem;
-        grid-template-columns: repeat(auto-fit, auto);
+        grid-template-rows: 2.5rem 4.5rem 28rem 28rem 28rem;
         row-gap: 1rem;
         grid-template-areas:
             'header header header'
@@ -747,6 +799,14 @@
         background-position: 50% 0% !important;
     }
 
+    main h1 {
+        font-size: 29px;
+    }
+
+    div p {
+        line-height: 1.1rem !important;
+    }
+
     .res-h1 {
         font-size: 1.5rem !important;
     }
@@ -762,12 +822,11 @@
 
 @media (max-width: 375px) and (max-height: 667px) {
     .services {
-        height: 275vh;
+        height: 285vh;
     }
 
     .main {
-        grid-template-rows: 2.5rem 2.5rem 26rem 26rem 26rem;
-        grid-template-columns: repeat(auto-fit, auto);
+        grid-template-rows: 2.5rem 4.5rem 27rem 27rem 27rem;
         row-gap: 1rem;
         grid-template-areas:
             'header header header'
@@ -861,6 +920,10 @@
         background-position: 50% 0% !important;
     }
 
+    div p {
+        line-height: 1.1rem !important;
+    }
+
     .res-h1 {
         font-size: 1.5rem !important;
     }
@@ -871,5 +934,11 @@
 
     .a3 {
         border-left: 0.25px solid black;
+    }
+}
+
+@media (min-width: 1376px) {
+    .res-h1 {
+        font-size: 30px !important;
     }
 }

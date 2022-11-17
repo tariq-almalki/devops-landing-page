@@ -157,6 +157,7 @@ export const services = [
             'res-services-ipad-mini-background-image': 'res-services-black-guy-ipad-mini',
             'res-services-ipad-pro-background-image': 'res-services-white-guy-sitting-ipad-pro',
             'res-services-generic-laptop-background-image': 'res-services-lying-black-guy-generic-laptop',
+            'res-services-156inch-laptop-background-image': 'res-services-lying-black-guy-156inch-laptop',
         },
     ],
     [

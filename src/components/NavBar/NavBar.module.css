@@ -1,7 +1,8 @@
 .nav {
     /* fixed doesn't work if the parent element contains transform property */
     position: fixed;
-    width: 70%;
+    width: 60%;
+    max-width: 1146px;
     top: 35px;
     left: 0;
     right: 0;
@@ -15,6 +16,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 33.333% 33.333% 33.333%;
+    /* max-width: 60%; */
     list-style-type: none;
     height: 45px;
     font-family: 'Chakra Petch', monospace;
