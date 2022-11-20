@@ -6,7 +6,11 @@ export function Team() {
     <>
       <div className={classes.team} id='teams'>
         <div className={classes.container}>
-          <h1 className={classes.header}>Technology Standards & Design Team</h1>
+          <div className={classes.title}>
+            <h1 className={classes.header}>
+              Technology Standards & Design Team
+            </h1>
+          </div>
           <div className={`cardCont`}>
             <div className='cardBack'>
               <h1 className={classes.header}>Director, Email: kkundi@elm.sa</h1>
@@ -145,7 +149,7 @@ export function Team() {
           </ol>
         </div>
         <footer className={classes.footer}>
-          <p>Created By: Tarik Almalki & Faisal Altuwayli</p>
+          <p>Created By: Tariq Almalki & Faisal Altuwayli</p>
         </footer>
       </div>
     </>

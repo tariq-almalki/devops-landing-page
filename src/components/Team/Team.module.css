@@ -38,6 +38,9 @@ ol {
     padding: 4rem;
     margin: 0 ;
   }
+  .title{
+    padding: 4rem;
+  }
   
   .rectangle {  
     position: relative;
@@ -142,13 +145,15 @@ ol {
     .level-2-wrapper {
       width: 90%;
       margin-left: 10%;
+      height: 20%;
     }
   
     .level-2-wrapper::before {
       left: -20px;
       width: 2px;
-      height: calc(100% + 40px);
+      height: 95.75%;
     }
+
  .level-2-wrapper > .left::after {
     content: "";
     position: absolute;
@@ -181,7 +186,7 @@ ol {
     left: 0;
     right: 0;
     padding: 0.8rem;
-    background: rgb(66, 51, 69);
+    background: #fb2576;
     color: white;
     font-weight: 500;
     display: flex;
