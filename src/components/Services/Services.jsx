@@ -65,7 +65,7 @@ export function Services(props) {
         </p>
         <div className={classes.div1}>
           <a
-            href='https://jira.elm.sa'
+            href={props.services[0].url}
             className={classes.a1}
             target='_blank'
             rel='noreferrer'
@@ -92,7 +92,7 @@ export function Services(props) {
         </div>
         <div className={classes.div2}>
           <a
-            href='https://jira.elm.sa'
+            href={props.services[1].url}
             className={classes.a2}
             target='_blank'
             rel='noreferrer'
@@ -119,7 +119,7 @@ export function Services(props) {
         </div>
         <div className={classes.div3}>
           <a
-            href='https://jira.elm.sa'
+            href={props.services[2].url}
             className={classes.a3}
             target='_blank'
             rel='noreferrer'
