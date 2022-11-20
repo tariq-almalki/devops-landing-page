@@ -4,7 +4,7 @@ import "./team.css";
 export function Team() {
   return (
     <>
-      <div className={classes.team} id='team'>
+      <div className={classes.team} id='teams'>
         <div className={classes.container}>
           <h1 className={classes.header}>Technology Standards & Design Team</h1>
           <div className={`cardCont`}>

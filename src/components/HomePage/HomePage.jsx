@@ -25,7 +25,7 @@ export function HomePage() {
       <section className={classes.section2}>
         <a
           className={classes.a}
-          href='https://www.youtube.com/watch?v=kY0XRCKqRc0&list=PLAP97hPyplzKtqMcwOYm9YS48CpV5SDZs'
+          href='https://wiki.elm.sa/display/TAKS/Dojo+Digital+Library?preview=/99575719/99575718/Week-1_Session-1_2020-11-08.mp4'
           target='_blank'
           rel='noreferrer'
         >
@@ -41,16 +41,19 @@ export function HomePage() {
           <div className={classes.getStarted}>Get Started</div>
         </a>
         <div className={classes.arrowButtonContainer}>
-          <div
-            className={classes.arrowButton}
+          <a
+            href='#services'
             onClick={onScrollServicesHandler}
+            className={classes.arrowButton}
           >
-            <FontAwesomeIcon
-              icon={faArrowDown}
-              className={classes.faArrowDown}
-            />
-            {/* <img className={classes.svgArrow} src={arrowDown} alt='' width={24} height={24} /> */}
-          </div>
+            <div onClick={onScrollServicesHandler}>
+              <FontAwesomeIcon
+                icon={faArrowDown}
+                className={classes.faArrowDown}
+              />
+              {/* <img className={classes.svgArrow} src={arrowDown} alt='' width={24} height={24} /> */}
+            </div>
+          </a>
         </div>
       </section>
     </main>

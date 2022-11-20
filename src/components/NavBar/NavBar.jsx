@@ -34,7 +34,7 @@ export function NavBar() {
         </a>
         <a
           className={`${classes["a-li-team"]} `}
-          href='#services'
+          href='#teams'
           onClick={onScrollTeamHandler}
         >
           <li className={`${classes["li-team"]} ${classes["li"]}`}>Team</li>
