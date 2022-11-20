@@ -235,7 +235,8 @@
 /* 428 - 926 */
 @media (max-width: 429px) and (max-height: 927px) {
     .homepage {
-        grid-template-rows: 25% 75%;
+        grid-template-rows: 30% 70%;
+        background-size: 15rem auto, auto, auto, auto;
     }
 }
 
