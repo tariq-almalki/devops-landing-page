@@ -533,6 +533,10 @@
     .services {
         height: 250vh;
     }
+
+    .h1 {
+        font-size: 29px !important;
+    }
 }
 
 /* iphone 11 */
