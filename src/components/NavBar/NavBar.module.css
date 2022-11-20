@@ -100,13 +100,22 @@
     outline: 0;
 }
 
-@media (max-width: 428px) and (max-height: 926px) {
+/* 768 - 1024 */
+@media (max-width: 769px) and (max-height: 1025px) {
     nav {
         display: none;
     }
 }
 
-@media (max-width: 375px) and (max-height: 667px) {
+/* 428 - 926 */
+@media (max-width: 429px) and (max-height: 927px) {
+    nav {
+        display: none;
+    }
+}
+
+/* 375 - 667 */
+@media (max-width: 376px) and (max-height: 668px) {
     nav {
         display: none;
     }
