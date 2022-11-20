@@ -15,7 +15,13 @@ import pipelinePng from '../../../images/services-icons/pipeline-icon.png';
 import argoWorkflowsPng from '../../../images/services-icons/argo-workflows.png';
 import openShiftSvg from '../../../images/services-icons/openshift-service.svg';
 
+import blackGuyWithBackPackAndLaptop from '../../../images/figures/3d-business-guy-with-backpack-and-laptop.png';
+import whiteGuySittingWithAPhone from '../../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png';
+import asianGuyWorkingOnLaptop from '../../../images/figures/3d-business-guy-working-on-a-computer.png';
+import blackGuyLyingOnStomechWithHisLaptop from '../../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png';
+
 const sharedStyles = {
+    servicesStyles: {},
     imgDivStyles: { display: 'flex', placeSelf: 'center' },
     h1DivStyles: { display: 'flex', placeSelf: 'center' },
     pDivStyles: { display: 'flex' },
@@ -28,7 +34,7 @@ const sharedStyles = {
         paddingTop: '11px',
         fontFamily: 'Lexend, monosapce',
         fontSize: '0.8rem',
-        lineHeight: '1.3rem',
+        lineHeight: '1.2rem',
     },
 };
 
@@ -50,6 +56,7 @@ export const services = [
                 padding: '10px',
                 paddingTop: '11px',
                 fontSize: '0.8rem',
+                lineHeight: '1.2rem',
             },
         },
         {
@@ -63,6 +70,19 @@ export const services = [
             p: 'Get unlimited, cloud-hosted private Git repositories and collaborate to build better code with pull requests and advanced file management.',
             h1: 'DevOps Repos',
             ...sharedStyles,
+        },
+        {
+            backgroundImage: `url(${blackGuyWithBackPackAndLaptop}), repeating-linear-gradient( 284deg,transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), repeating-linear-gradient( 14deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px,rgb(251, 251, 251) 3px), linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222))`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '100% 0%',
+        },
+        {
+            'res-services-iphone678-background-image': 'res-services-iphone678',
+            'res-services-iphone-12-13-pro-max-background-image': 'res-services-iphone12-13-pro-max',
+            'res-services-iphone-x-background-image': 'res-services-iphone-x',
+            'res-services-iphone678-plus-background-image': 'res-services-iphone678-plus',
+            'res-services-iphone12-13-background-image': 'res-services-iphone12-13',
+            'res-services-ipad-pro-background-image': 'res-services-backpack-black-guy-ipad-pro',
         },
     ],
     [
@@ -86,6 +106,21 @@ export const services = [
             imgDivStyles: { maxHeight: '220px', maxWidth: '220px', placeSelf: 'center' },
             imgStyles: { height: '100%', width: '100%' },
         },
+        {
+            backgroundImage: `url(${whiteGuySittingWithAPhone}),repeating-linear-gradient( 284deg,transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), repeating-linear-gradient( 14deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px,rgb(251, 251, 251) 3px), linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222))`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '0% 0%',
+        },
+        {
+            'res-services-iphone678-background-image': 'res-services-black-guy-iphone678',
+            'res-services-iphone-12-13-pro-max-background-image': 'res-services-black-guy-iphone12-13-pro-max',
+            'res-services-iphone-x-background-image': 'res-services-black-guy-iphone-x',
+            'res-services-iphone678-plus-background-image': 'res-services-black-guy-iphone678-plus',
+            'res-services-iphone12-13-background-image': 'res-services-black-guy-iphone12-13',
+            'res-services-ipad-pro-background-image': 'res-services-lying-black-guy-ipad-pro',
+            'res-services-generic-laptop-background-image': 'res-services-white-guy-sitting-generic-laptop',
+            'res-services-1920-1080-screen-background-image': 'res-services-white-guy-sitting-1920-1080-screen',
+        },
     ],
     [
         {
@@ -108,6 +143,23 @@ export const services = [
             p: 'Build your first continuous integration and continuous delivery pipeline with Bamboo, a CI server that can be used to automate the build, test, and release management for software application, creating a continuous delivery pipeline.',
             h1: 'DevOps CI',
             ...sharedStyles,
+        },
+        {
+            backgroundImage: `url(${blackGuyLyingOnStomechWithHisLaptop}),repeating-linear-gradient( 284deg,transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), repeating-linear-gradient( 14deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px,rgb(251, 251, 251) 3px), linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222))`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '95% 0%',
+        },
+        {
+            'res-services-iphone678-background-image': 'res-services-white-guy-sitting-iphone678',
+            'res-services-iphone-12-13-pro-max-background-image': 'res-services-white-guy-sitting-iphone12-13-pro-max',
+            'res-services-iphone-x-background-image': 'res-services-white-guy-sitting-iphone-x',
+            'res-services-iphone678-plus-background-image': 'res-services-white-guy-sitting-iphone678-plus',
+            'res-services-iphone12-13-background-image': 'res-services-white-guy-sitting-iphone12-13',
+            'res-services-ipad-mini-background-image': 'res-services-black-guy-ipad-mini',
+            'res-services-ipad-pro-background-image': 'res-services-white-guy-sitting-ipad-pro',
+            'res-services-generic-laptop-background-image': 'res-services-lying-black-guy-generic-laptop',
+            'res-services-156inch-laptop-background-image': 'res-services-lying-black-guy-156inch-laptop',
+            'res-services-1920-1080-screen-background-image': 'res-services-lying-black-guy-1920-1080-screen',
         },
     ],
     [
@@ -134,6 +186,20 @@ export const services = [
             ...sharedStyles,
             imgDivStyles: { maxHeight: '190px', maxWidth: '190px', placeSelf: 'center' },
             imgStyles: { height: '100%', width: '100%' },
+        },
+        {
+            backgroundImage: `url(${asianGuyWorkingOnLaptop}), repeating-linear-gradient( 284deg,transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), repeating-linear-gradient( 14deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px,rgb(251, 251, 251) 3px), linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222))`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '0% 100%',
+        },
+        {
+            'res-services-iphone678-background-image': 'res-services-asian-guy-working-iphone678',
+            'res-services-iphone-12-13-pro-max-background-image': 'res-services-asian-guy-working-iphone12-13-pro-max',
+            'res-services-iphone-x-background-image': 'res-services-asian-guy-working-iphone-x',
+            'res-services-iphone678-plus-background-image': 'res-services-asian-guy-working-iphone678-plus',
+            'res-services-iphone12-13-background-image': 'res-services-asian-guy-working-iphone12-13',
+            'res-services-ipad-mini-background-image': 'res-services-asian-guy-working-ipad-mini',
+            'res-services-ipad-pro-background-image': 'res-services-asian-guy-working-ipad-pro',
         },
     ],
 ];

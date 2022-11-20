@@ -4,27 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-image: repeating-linear-gradient(
-            284deg,
-            transparent 0px,
-            transparent 1px,
-            rgb(251, 251, 251) 1px,
-            rgb(251, 251, 251) 3px
-        ),
-        repeating-linear-gradient(
-            14deg,
-            transparent 0px,
-            transparent 1px,
-            rgb(251, 251, 251) 1px,
-            rgb(251, 251, 251) 3px
-        ),
-        linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222));
 }
 
 .main {
     display: grid;
-    width: 70%;
+    width: 60%;
+    max-width: 1146px;
     grid-template-rows: 2.5rem 2.5rem 30.5rem;
     grid-template-areas:
         'header header header'
@@ -44,6 +29,7 @@
 .p {
     margin: auto;
     grid-area: p;
+    text-align: center;
     font-family: 'Lexend', monospace;
 }
 
@@ -126,4 +112,906 @@
 .a3:hover {
     transform: translate(7px, -7px);
     border-left: 0.25px solid black;
+}
+
+/* 1920 - 1080 */
+@media (max-width: 1921px) and (max-height: 1081px) {
+    .res-services-white-guy-sitting-1920-1080-screen {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 0% 0% !important;
+    }
+
+    .res-services-lying-black-guy-1920-1080-screen {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 95% 0% !important;
+    }
+}
+
+/* 1536 - 864  */
+@media (max-width: 1537px) and (max-height: 865px) {
+    .res-services-lying-black-guy-156inch-laptop {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 95% 0% !important;
+    }
+}
+
+/* 1024 - 1366 */
+@media (max-width: 1025px) and (max-height: 1367px) {
+    .main {
+        grid-template-rows: 2.5rem 3.5rem 30.5rem;
+    }
+
+    .res-services-backpack-black-guy-ipad-pro {
+        background-image: url(../../images/figures/3d-business-guy-with-backpack-and-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 100% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-ipad-pro {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-lying-black-guy-ipad-pro {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 28rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-ipad-pro {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 20rem auto, auto, auto, auto;
+        background-position: 0% 0% !important;
+    }
+}
+
+/* 1280 - 950 */
+@media (max-width: 1281px) and (max-height: 951px) {
+    .res-services-white-guy-sitting-generic-laptop {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 20rem auto, auto, auto, auto;
+        background-position: 0% 0% !important;
+    }
+
+    .res-services-lying-black-guy-generic-laptop {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 23rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+}
+
+/* 768 - 1024 */
+@media (max-width: 769px) and (max-height: 1025px) {
+    .services {
+        height: 150vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 2.5rem 20rem 20rem 20rem;
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-black-guy-ipad-mini {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-ipad-mini {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 14rem auto, auto, auto, auto;
+        background-position: 0% 0% !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+/* 428 - 926 */
+@media (max-width: 429px) and (max-height: 927px) {
+    .services {
+        height: 200vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 4rem 26rem 26rem 26rem;
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-iphone12-13-pro-max {
+        background-image: repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+    }
+
+    .res-services-black-guy-iphone12-13-pro-max {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-iphone12-13-pro-max {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 18rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-iphone12-13-pro-max {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 11.5rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+
+/* for iphone 11 */
+/* 414 - 896 */
+@media (max-width: 415px) and (max-height: 897px) {
+    .services {
+        height: 210vh;
+    }
+}
+
+/* 414 - 736 */
+@media (max-width: 415px) and (max-height: 737px) {
+    .services {
+        height: 250vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 4.5rem 26rem 26rem 26rem;
+        grid-template-columns: repeat(auto-fit, auto);
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-iphone678-plus {
+        background-image: repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+    }
+
+    .res-services-black-guy-iphone678-plus {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-iphone678-plus {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 18rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-iphone678-plus {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 11.5rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+/* 390 - 844 */
+@media (max-width: 391px) and (max-height: 845px) {
+    .services {
+        height: 250vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 4.5rem 28rem 28rem 28rem;
+        grid-template-columns: repeat(auto-fit, auto);
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-iphone12-13 {
+        background-image: repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+    }
+
+    .res-services-black-guy-iphone12-13 {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-iphone12-13 {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 21rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-iphone12-13 {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 14rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    div p {
+        line-height: 1.1rem !important;
+    }
+
+    .res-h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+/* 375 - 812 */
+@media (max-width: 376px) and (max-height: 813px) {
+    .services {
+        height: 250vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 4.5rem 28rem 28rem 28rem;
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-iphone-x {
+        background-image: repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+    }
+
+    .res-services-black-guy-iphone-x {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 22rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-iphone-x {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 21rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-iphone-x {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 14rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    main h1 {
+        font-size: 29px;
+    }
+
+    div p {
+        line-height: 1.1rem !important;
+    }
+
+    .res-h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+
+/* 384 - 671 */
+@media (max-width: 385px) and (max-height: 672px) {
+    .services {
+        height: 305vh;
+    }
+
+    main h1 {
+        font-size: 29px;
+    }
+}
+
+/* 375 - 667 */
+@media (max-width: 376px) and (max-height: 668px) {
+    .services {
+        height: 285vh;
+    }
+
+    .main {
+        grid-template-rows: 2.5rem 4.5rem 27rem 27rem 27rem;
+        row-gap: 1rem;
+        grid-template-areas:
+            'header header header'
+            'p p p'
+            'div1 div1 div1'
+            'div2 div2 div2'
+            'div3 div3 div3';
+    }
+
+    .res-services-iphone678 {
+        background-image: repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+    }
+
+    .res-services-black-guy-iphone678 {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 20rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-white-guy-sitting-iphone678 {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 17rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    .res-services-asian-guy-working-iphone678 {
+        background-image: url(../../images/figures/3d-business-guy-working-on-a-computer.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 11.5rem auto, auto, auto, auto;
+        background-position: 50% 0% !important;
+    }
+
+    main h1 {
+        font-size: 29px;
+    }
+
+    div p {
+        line-height: 1.1rem !important;
+    }
+
+    .res-h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .a2 {
+        border-left: 0.25px solid black;
+    }
+
+    .a3 {
+        border-left: 0.25px solid black;
+    }
+}
+
+@media (min-width: 1376px) {
+    .res-h1 {
+        font-size: 30px !important;
+    }
 }

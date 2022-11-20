@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useRef } from "react";
+import React from "react";
 import "./LocomotiveScroll.css";
 import { useSmoothScroll } from "../Hooks/useSmoothScroll";
 import { useTransition } from "../Hooks/useTransition";
