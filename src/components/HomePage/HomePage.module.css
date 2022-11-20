@@ -204,6 +204,41 @@
     }
 }
 
+/* 1263 - 569 */
+@media (max-width: 1264px) and (max-height: 570px) {
+    .homepage {
+        grid-template-rows: 35% 55%;
+        background-repeat: no-repeat;
+        background-position: 1% 100%;
+        background-size: 10rem auto, auto, auto, auto;
+    }
+
+    .section2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .h1 {
+        font-size: 36px;
+    }
+
+    .a {
+        align-self: center;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .getStarted {
+        display: block;
+    }
+
+    .arrowButton {
+        display: flex;
+    }
+}
+
 /* 768 */
 @media (max-width: 769px) {
     .section2 {
