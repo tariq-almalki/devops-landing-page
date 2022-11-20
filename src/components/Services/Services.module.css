@@ -116,6 +116,49 @@
 
 /* 1920 - 1080 */
 @media (max-width: 1921px) and (max-height: 1081px) {
+    .res-services-white-guy-sitting-1920-1080-screen {
+        background-image: url(../../images/figures/business-3d-young-man-in-formalwear-sitting-on-the-floor-with-phone.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 0% 0% !important;
+    }
+
+    .res-services-lying-black-guy-1920-1080-screen {
+        background-image: url(../../images/figures/business-3d-man-lying-on-stomach-with-laptop.png),
+            repeating-linear-gradient(
+                284deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            repeating-linear-gradient(
+                14deg,
+                transparent 0px,
+                transparent 1px,
+                rgb(251, 251, 251) 1px,
+                rgb(251, 251, 251) 3px
+            ),
+            linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222)) !important;
+        background-repeat: no-repeat !important;
+        background-size: 25rem auto, auto, auto, auto;
+        background-position: 95% 0% !important;
+    }
 }
 
 /* 1536 - 864  */
@@ -469,7 +512,12 @@
 }
 
 /* for iphone 11 */
-/* @media (max-width: 414px) and (max-height: 896px) */
+/* 414 - 896 */
+@media (max-width: 415px) and (max-height: 897px) {
+    .services {
+        height: 210vh;
+    }
+}
 
 /* 414 - 736 */
 @media (max-width: 415px) and (max-height: 737px) {

@@ -119,6 +119,7 @@ export const services = [
             'res-services-iphone12-13-background-image': 'res-services-black-guy-iphone12-13',
             'res-services-ipad-pro-background-image': 'res-services-lying-black-guy-ipad-pro',
             'res-services-generic-laptop-background-image': 'res-services-white-guy-sitting-generic-laptop',
+            'res-services-1920-1080-screen-background-image': 'res-services-white-guy-sitting-1920-1080-screen',
         },
     ],
     [
@@ -158,6 +159,7 @@ export const services = [
             'res-services-ipad-pro-background-image': 'res-services-white-guy-sitting-ipad-pro',
             'res-services-generic-laptop-background-image': 'res-services-lying-black-guy-generic-laptop',
             'res-services-156inch-laptop-background-image': 'res-services-lying-black-guy-156inch-laptop',
+            'res-services-1920-1080-screen-background-image': 'res-services-lying-black-guy-1920-1080-screen',
         },
     ],
     [

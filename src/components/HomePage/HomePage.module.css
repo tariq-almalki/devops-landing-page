@@ -239,6 +239,14 @@
     }
 }
 
+/* 414 - 896 */
+@media (max-width: 415px) and (max-height: 897px) {
+    .homepage {
+        grid-template-rows: 30% 70%;
+        background-size: 14.5rem auto, auto, auto, auto;
+    }
+}
+
 /* 414 - 736 */
 @media (max-width: 415px) and (max-height: 737px) {
     .homepage {
