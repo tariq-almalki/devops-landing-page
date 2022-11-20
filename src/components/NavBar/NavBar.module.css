@@ -100,8 +100,8 @@
     outline: 0;
 }
 
-/* 1264 - 570 */
-@media (max-width: 1265px) and (max-height: 571px) {
+/* 1280 - 570 */
+@media (max-width: 1281px) and (max-height: 571px) {
     nav {
         display: none;
     }
