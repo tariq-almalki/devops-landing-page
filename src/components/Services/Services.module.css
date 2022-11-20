@@ -783,6 +783,14 @@
         border-left: 0.25px solid black;
     }
 }
+
+/* 414 - 715 */
+@media (max-width: 415px) and (max-height: 716px) {
+    .h1 {
+        font-size: 27px !important;
+    }
+}
+
 /* 375 - 812 */
 @media (max-width: 376px) and (max-height: 813px) {
     .services {
