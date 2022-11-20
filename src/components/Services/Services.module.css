@@ -463,6 +463,9 @@
     }
 }
 
+/* for iphone 11 */
+/* @media (max-width: 414px) and (max-height: 896px) */
+
 @media (max-width: 414px) and (max-height: 736px) {
     .services {
         height: 250vh;
