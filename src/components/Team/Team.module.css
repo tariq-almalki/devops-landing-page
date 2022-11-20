@@ -110,8 +110,6 @@ ol {
     margin: 4% 3% ;
   }
 
-  
-
   @media (max-width: 700px) {
     .header{
       font-size: large;
