@@ -17,7 +17,7 @@
     grid-template-columns: 33.333% 33.333% 33.333%;
     list-style-type: none;
     height: 45px;
-    font-family: 'Bebas Neue', monospace;
+    font-family: 'Chakra Petch', monospace;
     letter-spacing: 0.5px;
 }
 
@@ -28,6 +28,8 @@
     color: black;
     padding: 10px;
     background-color: white;
+    transition: all 0.2s ease;
+    pointer-events: auto;
 }
 
 .a-li-logo {
@@ -39,6 +41,11 @@
 
 .a-li-logo:focus {
     outline: 0;
+}
+
+.img-li {
+    height: 3rem;
+    width: 3rem;
 }
 
 .a-li-logo:hover {

@@ -4,42 +4,32 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
 gsap.registerPlugin(ScrollTrigger);
 
-export const useSmoothScroll = (ref) => {
+export const useSmoothScroll = () => {
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector(".parent"),
       smooth: true,
+      initPosition: { x: 0, y: 0 },
+      resetNativeScroll: false,
+      getDirection: true,
     });
+
     // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
-    locoScroll.on("scroll", ScrollTrigger.update);
+    locoScroll.on("scroll", (instance) => {
+      ScrollTrigger.update();
 
-    const anchorLinks = document.querySelectorAll(
-      "a[href^=\\#]:not([href$=\\#])"
-    );
-
-    anchorLinks.forEach((anchorLink) => {
-      let hashval = anchorLink.getAttribute("href");
-      let target = document.querySelector(hashval);
-
-      anchorLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        // anchorLinks.forEach((anchorLink) => {
-        //   anchorLink.classList.remove("active");
-        // });
-
-        // e.target.classList.add("active");
-
-        locoScroll.scrollTo(target);
-      });
+      // Add direction to DOM
+      document.documentElement.setAttribute(
+        "data-scrolling",
+        instance.direction
+      );
     });
 
     // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
     ScrollTrigger.scrollerProxy(".parent", {
       scrollTop(value) {
         return arguments.length
-          ? locoScroll.scrollTo(value, { duration: 0, disableLerp: true })
+          ? locoScroll.scrollTo(value, 0, 0)
           : locoScroll.scroll.instance.scroll.y;
       }, // we don't have to define a scrollLeft because we're only scrolling vertically.
       getBoundingClientRect() {
@@ -64,6 +54,26 @@ export const useSmoothScroll = (ref) => {
       scroller: ".parent",
     });
     // --- SETUP END ---
-    console.log("x");
-  }, [ref]);
+    const anchorLinks = document.querySelectorAll(
+      "a[href^=\\#]:not([href$=\\#])"
+    );
+
+    anchorLinks.forEach((anchorLink) => {
+      let hashval = anchorLink.getAttribute("href");
+      let target = document.querySelector(hashval);
+
+      anchorLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        anchorLinks.forEach((anchorLink) => {
+          anchorLink.classList.remove("active");
+        });
+
+        e.target.classList.add("active");
+
+        locoScroll.scrollTo(target);
+      });
+    });
+  }, []);
 };

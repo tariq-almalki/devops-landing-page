@@ -13,11 +13,9 @@ export function App() {
       <NavBar />
       <LocomotiveScroll>
         <HomePage />
-        <div className='panel' id='wrapper'>
-          {services.map((services, index) => (
-            <Services key={index} services={services} />
-          ))}
-        </div>
+        {services.map((services, index) => (
+          <Services key={index} services={services} />
+        ))}
         <Team />
       </LocomotiveScroll>
     </>
