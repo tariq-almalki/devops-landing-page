@@ -412,6 +412,7 @@
         border-left: 0.25px solid black;
     }
 }
+
 /* 428 - 926 */
 @media (max-width: 429px) and (max-height: 927px) {
     .services {
@@ -526,7 +527,19 @@
     }
 }
 
-/* for iphone 11 */
+/* iphone 12/13 pro max */
+/* 428 - 751 */
+@media (max-width: 429px) and (max-height: 752px) {
+    .services {
+        height: 250vh;
+    }
+
+    .h1 {
+        font-size: 29px !important;
+    }
+}
+
+/* iphone 11 */
 /* 414 - 896 */
 @media (max-width: 415px) and (max-height: 897px) {
     .services {
