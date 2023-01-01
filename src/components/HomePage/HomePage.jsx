@@ -1,61 +1,43 @@
-import classes from "./HomePage.module.css";
-import videoImage from "../../images/video-image.jpg";
+import classes from './HomePage.module.css';
+import videoImage from '../../images/video-image.jpg';
 // import { useWindowSize } from '../Hooks/useWindowSize.js';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export function HomePage() {
-  // const windowSize = useWindowSize();
+    // const windowSize = useWindowSize();
 
-  function onScrollServicesHandler() {
-    window.scrollTo(0, document.documentElement.clientHeight);
-  }
+    function onScrollServicesHandler() {
+        window.scrollTo(0, document.documentElement.clientHeight);
+    }
 
-  return (
-    <main className={classes.homepage} id='homepage'>
-      <section className={classes.section1}>
-        <h1 className={classes.h1}>
-          Welcome to <span className={classes.span}> DevOps Platform</span>
-        </h1>
-        <p className={classes.p}>
-          A Rich DevOps Platform with many services. Enabling teams to deliver
-          faster, more frequently and in more reliable fashion.
-        </p>
-      </section>
-      <section className={classes.section2}>
-        <a
-          className={classes.a}
-          href='https://wiki.elm.sa/display/TAKS/Dojo+Digital+Library?preview=/99575719/99575718/Week-1_Session-1_2020-11-08.mp4'
-          target='_blank'
-          rel='noreferrer'
-        >
-          {/* my screen height 746 width 1526 */}
-          {/* height 404 width 718 */}
-          <img
-            className={classes.img}
-            src={videoImage}
-            height={404}
-            width={718}
-            alt=''
-          />
-          <div className={classes.getStarted}>Get Started</div>
-        </a>
-        <div className={classes.arrowButtonContainer}>
-          <a
-            href='#services'
-            onClick={onScrollServicesHandler}
-            className={classes.arrowButton}
-          >
-            <div onClick={onScrollServicesHandler}>
-              <FontAwesomeIcon
-                icon={faArrowDown}
-                className={classes.faArrowDown}
-              />
-              {/* <img className={classes.svgArrow} src={arrowDown} alt='' width={24} height={24} /> */}
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-  );
+    return (
+        <main className={classes.homepage} id='homepage'>
+            <section className={classes.section1}>
+                <h1 className={classes.h1}>
+                    Welcome to <span className={classes.span}> DevOps Platform</span>
+                </h1>
+                <p className={classes.p}>
+                    A Rich DevOps Platform with many services. Enabling teams to deliver faster, more frequently and in
+                    more reliable fashion.
+                </p>
+            </section>
+            <section className={classes.section2}>
+                <a className={classes.a} href='' target='_blank' rel='noreferrer'>
+                    {/* my screen height 746 width 1526 */}
+                    {/* height 404 width 718 */}
+                    <img className={classes.img} src={videoImage} height={404} width={718} alt='' />
+                    <div className={classes.getStarted}>Get Started</div>
+                </a>
+                <div className={classes.arrowButtonContainer}>
+                    <a href='#services' onClick={onScrollServicesHandler} className={classes.arrowButton}>
+                        <div onClick={onScrollServicesHandler}>
+                            <FontAwesomeIcon icon={faArrowDown} className={classes.faArrowDown} />
+                            {/* <img className={classes.svgArrow} src={arrowDown} alt='' width={24} height={24} /> */}
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    );
 }
